@@ -4,9 +4,11 @@
 
 package ui;
 
+import java.util.ArrayList;
 import model.Animal;
+import model.Cat;
 import model.Dog;
-import model.Plant;
+import model.Tree;
 
 /**
  *
@@ -16,33 +18,33 @@ public class InheritanceMain {
 
     public static void main(String[] args) {
         
-        Animal zebra = new Animal("Stripes");
+        ArrayList<Animal> happyAnimals = new ArrayList<Animal>();
+        
+        Dog dog = new Dog("Small dog");
+        Cat cat = new Cat("Lovely cat");
         
         
-        System.out.println("What can Zebra do?");
-        zebra.whatsYourName();
-        zebra.eat();
-        zebra.sleep();
-
-        
-        System.out.println("What can a Dog do?");
-        Dog schnautzer = new Dog("Jack"); 
-        
-        schnautzer.whatsYourName();
-        schnautzer.eat();
-        schnautzer.sleep();
-        schnautzer.bark();
-        
-        Dog mySecondDog = new Dog("Pinkie");
+        happyAnimals.add(dog);
+        happyAnimals.add(cat);
         
         
-        Animal thisIsActuallyMySecondDog = mySecondDog; // Converts Dog to Animal
+        Dog smallDog = (Dog) happyAnimals.get(0);
+        smallDog.bark();
+        smallDog.eat();
         
-        // thisIsActuallyMySecondDog.bark();
         
-        Dog thisIsMyDogAgain = (Dog) thisIsActuallyMySecondDog; // Converts Animal back to Dog
+        Cat lovelyCat = (Cat) happyAnimals.get(1);
+        lovelyCat.meow();
+        lovelyCat.eat();
         
-        thisIsMyDogAgain.bark();
+        
+    
+        
+        
+        
+        
+        
+        
         
         
         

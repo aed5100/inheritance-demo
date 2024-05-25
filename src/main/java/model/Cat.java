@@ -8,16 +8,15 @@ package model;
  *
  * @author achiko
  */
-public class Dog extends Animal {
-
-    public Dog(String name) {
+public class Cat extends Animal {
+   
+    public Cat(String name) {
         super(name);
     }
     
-    public void bark(){
-        System.out.println("I'm a dog and I can bark: Wufwuf");
-        
+    public void meow(){
+        System.out.println("Meow");
     }
-    
+   
     
 }

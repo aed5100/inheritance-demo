@@ -9,6 +9,6 @@ package model;
  *
  * @author achiko
  */
-public class Plant {
+public class Tree {
     
 }
